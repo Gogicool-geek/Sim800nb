@@ -1,0 +1,22 @@
+{
+  "name": "Sim899nb",
+  "version": "0.1.0",
+  "description": "SIM800L non-blocking library for Arduino",
+  "keywords": "SIM800L, sms, arduino, non-blocking",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gogicool-geek/Sim800nb.git"
+  },
+  "authors": [{
+    "name": "Vladimir Bogdanov",
+    "email": "gogicool.geek@gmail.com",
+    "url": "https://github.com/Gogicool-geek"
+  }],
+  "license": "MIT",
+  "dependencies": {
+    "ocoduino/RingBuffer": "^1.0.3",
+    "gogicool-geek/ArduinoTaskManager": "^0.1.1"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
