@@ -9,7 +9,7 @@ SIM800L module is controlled by pushing command to internal queue, for example:
     sim.push_command(CommandType::SEND, "Hello World!);
 
 There are a number commands types available:
-* *WAIT* -  stop to read command queue for period of time. Sometimes it is needed to obtain result from SIM800L. Especaily if you send raw command to module and result takes tame, push right after main command this WAIT. The ducation can be ajusted in constant TIMEOUT_LONG
+* *WAIT* -  stop to read command queue for period of time. Sometimes it is needed to obtain result from SIM800L. Especaily if you send raw command to module and getting result takes time, therefore push "READ" command right after "WAIT". The ducation can be ajusted in constant TIMEOUT_LONG
 
 * *WRITE* - write raw command directly to SIM module (command should be in argument). By default after every WRITE command come short delay. the duration of short delay could be specify in constant TIMEOUT_SHORT
 
